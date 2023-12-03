@@ -1,0 +1,92 @@
+body{
+    background-color: 	#232b2b;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+
+.site-logo-title a{
+    text-decoration: none;
+    color: 	white;
+
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+    color: 	white;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================= MAIN HEADER ======================= */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px;
+}
+.main-header, .left-side{
+    color: white;
+    padding: 10px;
+}
+
+.left-side h1{
+    font-size: 70px;
+    margin-bottom: -5px;
+}
+.left-side h2{
+    color: lightgray;
+}
+
+
+
+
+.right-side{
+    position: relative;
+}
+
+.circle-1, .circle-2{
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border: 5px solid orange;
+    border-radius: 59% 41% 59% 41% / 44% 49% 51% 56%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: rotate-circle 10s infinite;
+}
+.circle-2{
+    border: 5px solid yellow;
+    animation: rotate-circle 20s infinite;
+}
+
+@keyframes rotate-circle{
+    from{
+        transform: rotate(360deg);
+    }
+    top{
+        transform: rotate(0deg);
+    }
+}
+.right-side img{
+    border-radius: 47% 53% 39% 61% / 57% 43% 57% 43%;
+    box-shadow: 30px 10px 100px black;
+}
